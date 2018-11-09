@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".controller.AppScreen">
+
+    <TextView
+        android:id="@+id/appText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/appText2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="77dp"
+        android:text="Welcome to the app for" />
+
+    <TextView
+        android:id="@+id/appText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/loadLocButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="85dp"
+        android:text="Team 79B" />
+
+    <Button
+        android:id="@+id/loadLocButton"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="15dp"
+        android:onClick="loadLocations"
+        android:text="Load Locations" />
+
+    <Button
+        android:id="@+id/loadSearchButton"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/loadLocButton"
+        android:layout_marginBottom="15dp"
+        android:onClick="goToSearch"
+        android:text="Item Search" />
+
+    <Button
+        android:id="@+id/goWelcome"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/loadSearchButton"
+        android:onClick="goToWelcome"
+        android:text="Go Back" />
+
+    <Button
+        android:id="@+id/loadMap"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/loadLocButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-111dp"
+        android:onClick="loadMap"
+        android:text="Load Map Locations" />
+
+</RelativeLayout>

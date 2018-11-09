@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".controller.DetailScreen">
+
+    <TextView
+        android:id="@+id/detailName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp"
+        android:text="name"
+        android:textSize="30sp"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/detailLat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/detailName"
+        android:layout_marginTop="10dp"
+        android:text="lat"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/detailLon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/detailLat"
+        android:layout_marginTop="10dp"
+        android:text="lon"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/detailAdd1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/detailLon"
+        android:layout_marginTop="10dp"
+        android:text="add1"
+        android:textSize="25sp"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/detailAdd2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/detailAdd1"
+        android:layout_marginTop="10dp"
+        android:text="add2"
+        android:textSize="25sp"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/detailType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/detailAdd2"
+        android:layout_marginTop="10dp"
+        android:text="type"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/detailPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/detailType"
+        android:layout_marginTop="10dp"
+        android:text="name"
+        android:textSize="25sp"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/detailWeb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/detailPhone"
+        android:layout_marginTop="10dp"
+        android:text="name"
+        android:textSize="25sp"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/goItemList"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/detailWeb"
+        android:text="Go To Items" />
+
+    <Button
+        android:id="@+id/backToList"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/goItemList"
+        android:text="Go Back" />
+
+
+
+</RelativeLayout>

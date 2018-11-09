@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".controller.SearchDetailScreen">
+
+    <TextView
+        android:id="@+id/itemTimeStamp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp"
+        android:text="time stamp"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/itemLoc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/itemTimeStamp"
+        android:layout_marginTop="10dp"
+        android:text="location"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/itemSDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/itemLoc"
+        android:layout_marginTop="10dp"
+        android:text="short description"
+        android:textSize="25sp"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/itemLDTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/itemSDesc"
+        android:layout_marginTop="15dp"
+        android:text="Item Description:"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/itemLDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/itemLDTitle"
+        android:layout_marginTop="10dp"
+        android:text="long description"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/itemVal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/itemLDesc"
+        android:layout_marginTop="30dp"
+        android:text="value"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/itemCat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/itemVal"
+        android:layout_marginTop="10dp"
+        android:text="category"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"/>
+
+
+    <Button
+        android:id="@+id/backToItemList"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/itemCat"
+        android:onClick="backToList"
+        android:text="Go Back" />
+
+</RelativeLayout>

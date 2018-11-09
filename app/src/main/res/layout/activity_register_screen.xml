@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".controller.LoginScreen">
+
+    <EditText
+        android:id="@+id/regEmail"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/roleText"
+        android:layout_marginBottom="15dp"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:hint="Email" />
+
+    <TextView
+        android:id="@+id/roleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/roleSpinner"
+        android:layout_alignStart="@+id/roleSpinner"
+        android:text="Role" />
+
+    <Spinner
+        android:id="@+id/roleSpinner"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/regPass"
+        android:layout_marginBottom="15dp"
+        android:layout_centerHorizontal="true"  />
+
+    <EditText
+        android:id="@+id/regPass"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/regPassRepeat"
+        android:layout_marginBottom="15dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Password" />
+
+    <EditText
+        android:id="@+id/regPassRepeat"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Repeat Password" />
+
+    <Button
+        android:id="@+id/regSubmit"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/regPassRepeat"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:onClick="regPress"
+        android:text="Register" />
+
+    <Button
+        android:id="@+id/regBack"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/regSubmit"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="Go Back" />
+
+</RelativeLayout>

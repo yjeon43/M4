@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".controller.SearchScreen">
+
+    <TextView
+        android:id="@+id/locText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/locSpinner"
+        android:layout_alignStart="@+id/locSpinner"
+        android:layout_marginBottom="10dp"
+        android:text="Location" />
+
+    <Spinner
+        android:id="@+id/locSpinner"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/itemEntry"
+        android:layout_marginBottom="30dp"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/itemEntry"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/itemSearch"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:inputType="textPersonName"
+        android:hint="Item Name" />
+
+    <Button
+        android:id="@+id/itemSearch"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/catEntry"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:onClick="searchItem"
+        android:text="Search by Item Name" />
+
+    <EditText
+        android:id="@+id/catEntry"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:inputType="textPersonName"
+        android:hint="Category Name" />
+
+    <Button
+        android:id="@+id/catSearch"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/catEntry"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:onClick="searchCat"
+        android:text="Search by Category Name" />
+
+    <Button
+        android:id="@+id/goApp"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/catSearch"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:onClick="goToApp"
+        android:text="Go Back" />
+
+</RelativeLayout>

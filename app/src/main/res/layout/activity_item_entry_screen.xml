@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".controller.ItemEntryScreen">
+
+    <EditText
+        android:id="@+id/itemSDesc"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/itemLDesc"
+        android:layout_marginBottom="5dp"
+        android:gravity="top|left"
+        android:scrollbars="vertical"
+        android:hint="Name/Short Description" />
+
+    <EditText
+        android:id="@+id/itemLDesc"
+        android:lines="4"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/itemVal"
+        android:layout_marginBottom="5dp"
+        android:gravity="top|left"
+        android:scrollbars="vertical"
+        android:hint="Long Description" />
+
+    <EditText
+        android:id="@+id/itemVal"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/itemCat"
+        android:layout_marginBottom="5dp"
+        android:layout_centerHorizontal="true"
+        android:hint="Dollar Value" />
+
+    <EditText
+        android:id="@+id/itemCat"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="5dp"
+        android:ems="10"
+        android:hint="Category" />
+
+    <EditText
+        android:id="@+id/itemTime"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/itemCat"
+        android:layout_marginBottom="5dp"
+        android:ems="10"
+        android:inputType="time"
+        android:hint="Time Stamp" />
+
+
+    <Button
+        android:id="@+id/itemSubmit"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/goItemList"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:onClick="addNewItem"
+        android:text="Add Item" />
+
+    <Button
+        android:id="@+id/goItemList"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:text="Go Back" />
+
+</RelativeLayout>
